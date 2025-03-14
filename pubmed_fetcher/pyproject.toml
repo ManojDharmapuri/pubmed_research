@@ -1,0 +1,21 @@
+[project]
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.25.1"  # Add this line under [tool.poetry.dependencies]
+xmltodict = "^0.14.2"
+
+[tool.poetry]
+packages = [{include = "pubmed_fetcher", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
